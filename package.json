@@ -1,7 +1,7 @@
 {
   "name": "solarplanets",
   "description": "Solar planets single-file JavaScript module",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "main": "index.mjs",
   "author": "Brian Kirkpatrick <code@tythos.net>",
   "repository": "git@github.com:Tythos/solarplanets.git",
@@ -17,9 +17,9 @@
     "terser": "5.15"
   },
   "scripts": {
-    "test": "node -e \"console.log(JSON.stringify(require('./package.json')['.jasmine-conf']))\" > .jasmine-conf.json & node -e \"console.log(require('./package.json')['.jasmine-tests'].join('\\n'))\" > .jasmine-tests.mjs & jasmine --config=.jasmine-conf.json",
     "docs": "node -e \"let pkg = require('./package.json'); pkg['.jsdoc-conf']['templates']['systemName'] = pkg['name']; pkg['.jsdoc-conf']['templates']['systemSummary'] = pkg['description']; pkg['.jsdoc-conf']['templates']['copyright'] = pkg['license']; console.log(JSON.stringify(pkg['.jsdoc-conf']))\" > .jsdoc-conf.json & jsdoc -R ./README.md -c ./.jsdoc-conf.json -t ./node_modules/foodoc/template ./index.mjs",
-    "coverage": "node -e \"console.log(JSON.stringify(require('./package.json')['.c8-conf']))\" > .c8rc.json & c8 yarn run test"
+    "test": "node -e \"console.log(JSON.stringify(require('./package.json')['.jasmine-conf']))\" > .jasmine-conf.json & node -e \"console.log(require('./package.json')['.jasmine-tests'].join('\\n'))\" > .jasmine-tests.mjs & jasmine --config=.jasmine-conf.json",
+    "cov": "node -e \"console.log(JSON.stringify(require('./package.json')['.c8-conf']))\" > .c8rc.json & c8 yarn run test"
   },
   ".jsdoc-conf": {
     "recurseDepth": 3,
@@ -50,12 +50,12 @@
   },
   ".jasmine-tests": [
     "import { JUnitXmlReporter } from \"jasmine-reporters\";",
-    "import index from \"./index.mjs\";",
+    "import index from \"./tests.mjs\";",
     "const junitReporter = new JUnitXmlReporter({ \"consolidateAll\": true });",
     "jasmine.getEnv().addReporter(junitReporter);",
-    "describe(\"thismodule\", () => {",
-    " Object.keys(index.__tests__).forEach(k => {",
-    "   it(k, index.__tests__[k]);",
+    "describe(\"this module\", () => {",
+    " Object.keys(index).forEach(k => {",
+    "   it(k, index[k]);",
     " });",
     "});"
   ],
