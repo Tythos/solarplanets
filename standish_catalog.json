@@ -1,0 +1,128 @@
+{
+    "mercury": {
+        "a_au": 0.38709893,
+        "da_au": 0.00000066,
+        "e": 0.20563069,
+        "de": 0.00002527,
+        "i_deg": 7.00487,
+        "di_sec": -23.51,
+        "raan_deg": 48.33167,
+        "draan_sec": -446.30,
+        "lop_deg": 77.4545,
+        "dlop_sec": 573.57,
+        "ml_deg": 252.25084,
+        "dml_sec": 538101628.29
+    },
+    "venus": {
+        "a_au": 
+        "da_au": 
+        "e": 
+        "de": 
+        "i_deg": 
+        "di_sec": 
+        "raan_deg": 
+        "draan_sec": 
+        "lop_deg": 
+        "dlop_sec": 
+        "ml_deg": 
+        "dml_sec": 
+    },
+    "earth": {
+        "a_au": 
+        "da_au": 
+        "e": 
+        "de": 
+        "i_deg": 
+        "di_sec": 
+        "raan_deg": 
+        "draan_sec": 
+        "lop_deg": 
+        "dlop_sec": 
+        "ml_deg": 
+        "dml_sec": 
+    },
+    "mars": {
+        "a_au": 
+        "da_au": 
+        "e": 
+        "de": 
+        "i_deg": 
+        "di_sec": 
+        "raan_deg": 
+        "draan_sec": 
+        "lop_deg": 
+        "dlop_sec": 
+        "ml_deg": 
+        "dml_sec": 
+    },
+    "jupiter": {
+        "a_au": 
+        "da_au": 
+        "e": 
+        "de": 
+        "i_deg": 
+        "di_sec": 
+        "raan_deg": 
+        "draan_sec": 
+        "lop_deg": 
+        "dlop_sec": 
+        "ml_deg": 
+        "dml_sec": 
+    },
+    "saturn": {
+        "a_au": 
+        "da_au": 
+        "e": 
+        "de": 
+        "i_deg": 
+        "di_sec": 
+        "raan_deg": 
+        "draan_sec": 
+        "lop_deg": 
+        "dlop_sec": 
+        "ml_deg": 
+        "dml_sec": 
+    },
+    "uranus": {
+        "a_au": 
+        "da_au": 
+        "e": 
+        "de": 
+        "i_deg": 
+        "di_sec": 
+        "raan_deg": 
+        "draan_sec": 
+        "lop_deg": 
+        "dlop_sec": 
+        "ml_deg": 
+        "dml_sec": 
+    },
+    "neptune": {
+        "a_au": 
+        "da_au": 
+        "e": 
+        "de": 
+        "i_deg": 
+        "di_sec": 
+        "raan_deg": 
+        "draan_sec": 
+        "lop_deg": 
+        "dlop_sec": 
+        "ml_deg": 
+        "dml_sec": 
+    },
+    "pluto": {
+        "a_au": 
+        "da_au": 
+        "e": 
+        "de": 
+        "i_deg": 
+        "di_sec": 
+        "raan_deg": 
+        "draan_sec": 
+        "lop_deg": 
+        "dlop_sec": 
+        "ml_deg": 
+        "dml_sec": 
+    }
+}
