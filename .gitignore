@@ -1,9 +1,10 @@
+coverage/
 node_modules/
 out/
 *-error.log
-yarn.lock
 .jsdoc-conf.json
 .jasmine-conf.json
 .jasmine-tests.mjs
-junitresults.xml
 .c8rc.json
+junitresults.xml
+yarn.lock
