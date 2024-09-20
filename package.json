@@ -5,6 +5,7 @@
   "main": "index.mjs",
   "author": "Brian Kirkpatrick <code@tythos.net>",
   "repository": "git@github.com:Tythos/solarplanets.git",
+  "homepage": "https://github.com/Tythos/solarplanets",
   "license": "MIT",
   "type": "module",
   "devDependencies": {

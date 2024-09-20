@@ -2,7 +2,40 @@
 
 Implements a self-contained mean-rate (first-order) model of planetary elements, including top-level transform sequence for computing position and velocity state (in a heliocentric ecliptic frame).
 
-Based on Curtis's "Orbital Mechanics for Engineering Students"--specifically, 8.10 "Planetary Ephemeris".
+Based on Curtis's "Orbital Mechanics for Engineering Students" (though I am using the 2nd edition)--specifically, 8.10 "Planetary Ephemeris":
+
+https://www.sciencedirect.com/book/9780080977478/orbital-mechanics-for-engineering-students
+
+## Quick Start
+
+To use from the command line--e.g., Node:
+
+```js
+const solarplanets = await import("./index.mjs");
+const planets = JSON.parse(fs.readFileSync("standish_catalog.json", "utf8"));
+const dt = new Date();
+const [rHcec_km, vHcec_kmps] = solarplanets.getRvFromElementsDatetime(planets.earth, dt);
+console.log(rHcec_km);
+```
+
+To use from a web application (say, packed with yarn & vite), first add the dependency:
+
+```sh
+yarn add solarplanets
+```
+
+Then, import from your application:
+
+```js
+import * as solarplanets from "./solarplanets.mjs";
+fetch("/path/to/standish_catalog.json")
+    .then(response => response.json())
+    .then(planets => {
+        const dt = new Date();
+        const [rHcec_km, vHcec_kmps] = solarplanets.getRvFromElementsDatetime(planets.earth, dt);
+        console.log(rHcec_km);
+    }).catch(console.error);
+```
 
 ## Behaviors
 
